@@ -21,7 +21,6 @@ jobs:
         run: postman login --with-api-key "PMAK-6ad60d79fa086b00018561db-49963e0c59550a948b4c8d0257dcbda24c"
         env:
           POSTMAN_API_KEY: ${{ secrets.POSTMAN_API_KEY }}
-
       - name: Chạy kịch bản Monitor
         run: |
           postman collection run "RestfulBooker_API_Collection.postman_collection.json"
